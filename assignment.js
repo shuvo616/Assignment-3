@@ -1,31 +1,18 @@
-// put the github link here:
+// https://github.com/shuvo616/Assignment-3
 
 
-// problem 1: kilometer to meter conversion
-
-// problem 2: Make a budget calculator. The function will have 3 parameter(watch,phone,laptop) and have price of (watch = 50tk, phone = 100 tk, laptop = 500tk)....
-
-// problem 3 : Count Hotel cost. 1 to 10 days = 100tk. 11 to 20 days = 80tk(20tk discount), 21 to many days 50tk. Only one input parameter(how many days you want to stay).
-
-// problem 4: you have given an array as an input parameter of a function contain with friends name.You have to find out the largest name from this array.
-
-// Given function name
-// 1st: kilometerToMeter
-// 2nd: budgetCalculator
-// 3rd: hotelCost
-// 4th: megaFriend
 
 // solution: 1
 function kilometerToMeter(kilometer){
     var meter = 0;
     if(kilometer <= 0){
-        meter = "Please enter a positive value";
+        meter = "Distance can not be negative. Enter a positive number";
     }else{
         meter = kilometer * 1000;
     }
     return meter;
 }
-var result = kilometerToMeter(1.2);
+var result = kilometerToMeter(2);
 console.log(result);
 
 
@@ -43,7 +30,7 @@ function budgetCalculator(watch,phone,laptop){
     return totalAmount;
 }
 
-var myBudget = budgetCalculator(1,3.2,-4);
+var myBudget = budgetCalculator(0,0,0);
 console.log(myBudget); 
 
 
@@ -70,9 +57,6 @@ function hotelCost(days){
 }
 var result = hotelCost(5);
 console.log(result);
-
-
-
 
 
 // solution: 4
